@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Galeri-Verexpert</title>
         <link rel="shortcut icon" href="Vinta.png" type="image/x-icon">
-        <link rel="stylesheet" href="style2.css">        
+        <link rel="stylesheet" href="style2.css">
+        <script src="InfoTugas.js"></script>
         <body>
             <nav >
                 <div class="navbar">
@@ -24,7 +25,7 @@
                 <p>Roster Senin-Jumat, Sabtu minggu Libur</p>
             </div>
         <div class="colomatas">
-            <div class="marg1">
+            <div class="marg1" onclick="senin()">
                 <h4>Senin</h4>
                 <ul>
                     <li>Fiqih</li>
@@ -34,7 +35,7 @@
                     <li>-</li>
                 </ul>
             </div>
-            <div class="marg1">
+            <div class="marg1" onclick="selasa()">
                 <h4>Selasa</h4>
                 <ul>
                     <li>Matematika(W)</li>
@@ -44,7 +45,7 @@
                     <li>-</li>
                 </ul>
             </div>
-            <div class="marg1">
+            <div class="marg1" onclick="rabu()">
                 <h4>Rabu</h4>
                 <ul>
                     <li>Inggris</li>
@@ -55,7 +56,7 @@
                     </ul>
             </div>
         </div>
-        <div class="colomatas">
+        <div class="colomatas" onclick="kamis()">
             <div class="marg1">
                 <h4>Kamis</h4>
                 <ul>
@@ -66,7 +67,7 @@
                     <li>-</li>
                 </ul>
             </div>
-            <div class="marg1">
+            <div class="marg1" onclick="jumat()">
                 <h4>Jum'at</h4>
                 <ul>
                     <li>PJOK</li>
