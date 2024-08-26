@@ -1,0 +1,183 @@
+*, html{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    margin: none;
+    padding: 2rem 2rem;
+    background-color: #191919;
+    justify-content:space-between
+}
+
+nav h1{
+    color: white;
+    display: flex;
+    text-align:left;
+    margin-left: 5%;
+}
+
+.navbar{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding:8px 0;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color:#191919;
+    background-color:aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container{
+    background-image: url(upacara.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.judul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 0 50px;   
+    display: flex;
+    flex-direction: column;
+}
+
+.judul h1{
+    font-style: italic;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.judul p{
+    color: aliceblue;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 350;
+    margin-left: 10px;
+}
+button{
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    background-color:#191919;
+    border-width: 0.01px ;
+    margin: 10px;
+}
+
+.menu{
+    background-color: #191919;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.baris{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+}
+
+.deret{
+    border: solid 5px;
+    border-color: aliceblue;  
+    background-color: aliceblue;
+    padding: 100px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+a{
+    color: #191919;
+    text-decoration: none;
+}
+
+.deret:hover{
+    background-color:#191919;
+    color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .container {
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    .judul {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .judul h1 {
+        font-size: 2rem;
+    }
+
+    .judul p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 50%;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .baris {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .deret {
+        padding: 50px 20px;
+        border-radius: 10px;
+    }
+}

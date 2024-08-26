@@ -1,0 +1,235 @@
+*, html{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    margin: none;
+    padding: 2rem 2rem;
+    background-color: #191919;
+    justify-content:space-between
+}
+
+h1{
+    color: white;
+    display: flex;
+    text-align:left;
+    margin-left: 5%;
+}
+
+.navbar{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding:8px 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+    color:#191919;
+    background-color:aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.border{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #191919;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.1s;
+}
+
+body{
+    background: url(bgg.jpg);
+    background-position:center ;
+    background-size: cover;
+}
+
+.border img{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.border:hover{
+    border: solid aliceblue;
+}
+
+@media (max-width: 1000px) {
+    .border img {
+        width: 300px;
+        height: 150px;
+        border-radius: 20px;
+    }
+}
+
+/* Untuk layar berukuran 790px atau lebih kecil */
+@media (max-width: 790px) {
+    .border img {
+        width: 450px;
+        height: 330px;
+        border-radius: 20px;
+    }
+}
+
+/* Untuk layar berukuran 768px atau lebih kecil */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .border {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Untuk layar berukuran 480px atau lebih kecil (mobile) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .border {
+        width: 90%;
+        margin: auto;
+    }
+
+    .border img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+/* CSS untuk modal */
+.modal {
+    display: none; /* Hidden secara default */
+    position: fixed; /* Tetap di posisi layar */
+    z-index: 1; /* Di atas elemen lain */
+    padding-top: 100px; /* Jarak dari atas */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar layar penuh */
+    height: 100%; /* Tinggi layar penuh */
+    overflow: auto; /* Untuk scroll jika diperlukan */
+    background-color: rgba(0, 0, 0, 0.9); /* Warna latar belakang dengan sedikit transparansi */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content, .close {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* Gaya untuk tombol close (X) */
+.close {
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Gaya untuk caption di bawah gambar */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Untuk tampilan di bawah 768px */
+@media only screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .close {
+        top: 20px;
+        right: 30px;
+        font-size: 35px;
+    }
+
+    #caption {
+        font-size: 14px;
+    }
+}

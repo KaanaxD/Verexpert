@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengacak Kelompok</title>
+    <link rel="shortcut icon" href="vinta.png" type="image/x-icon">
+    <link rel="stylesheet" href="kelompokstyle.css">
+</head>
+<body>
+    <nav >
+        <div class="navbar">
+            <h1 style="font-style: italic;">VEREXPERT</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Galeri.html">Galeri</a></li>
+            <li><a href="InfoTugas.html">Roster</a></li>
+        </ul>   
+        </nav> 
+<div class="containerr">
+    <div class="container">
+        <h1>Pengacak Kelompok</h1>
+        <p>Masukkan nama-nama (satu nama per baris):</p>
+        <textarea id="namesInput">
+Arkab
+Akram n
+Akram f
+Alim
+Asraf
+Arif
+Faris
+Farid
+Fikri
+Revan
+Ocan
+Rasyid
+Ghafur
+Iluth
+Itsar
+Ijlal
+Kiran
+Kirana
+Kasih
+Zhobi
+Faiqah
+Firah</textarea>
+        <p>Masukkan jumlah kelompok:</p>
+        <input type="number" id="groupCountInput" min="1" value="2">
+        <div class="tombol1">
+            <button onclick="acakKelompok()">Acak Kelompok</button>
+        </div>
+    </div>   
+    <div class="penengah">
+        <div class="results" id="results"></div>
+    </div> 
+</div>        
+<div class="footer">
+    <br>
+    <p>&copy;Lemen</p>
+    <br>
+</div>
+    <script>
+        function acakKelompok() {
+            let names = document.getElementById('namesInput').value.trim().split('\n');
+            let groupCount = parseInt(document.getElementById('groupCountInput').value);
+
+            if (names.length < groupCount) {
+                alert("Jumlah kelompok tidak boleh melebihi jumlah nama.");
+                return;
+            }
+
+            // Acak nama-nama
+            for (let i = names.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [names[i], names[j]] = [names[j], names[i]];
+            }
+
+            // Bagi nama-nama ke dalam kelompok
+            let groups = Array.from({ length: groupCount }, () => []);
+            names.forEach((name, index) => {
+                groups[index % groupCount].push(name);
+            });
+
+            // Tampilkan hasil
+            let resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+            groups.forEach((group, index) => {
+                let groupDiv = document.createElement('div');
+                groupDiv.classList.add('group');
+                groupDiv.innerHTML = `<h3>Kelompok ${index + 1}</h3><p>${group.join('<br>')}</p>`;
+                resultsDiv.appendChild(groupDiv);
+            });
+        }
+    </script>
+</body>
+</html>

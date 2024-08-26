@@ -1,0 +1,194 @@
+*, html{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    margin: none;
+    padding: 2rem 2rem;
+    background-color: #191919;
+    justify-content:space-between
+}
+
+body{
+    background: url(upacara.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav h1{
+    color: white;
+    display: flex;
+    text-align:left;
+    margin-left: 5%;
+}
+
+.navbar{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding:8px 0;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color:#191919;
+    background-color:aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 20px;
+    font-size: larger;
+    color: #191919;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container textarea{
+    border-width: 0.5px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.container input{
+    border-width: 0.5px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container button{
+    border: none;
+    background-color:#ECDFCC;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    color: #191919;
+    background-color:aliceblue;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.tombol1 :hover{
+    background-color: #191919;
+    color: aliceblue;
+}
+
+button{
+    transition: 0.3s;
+}
+
+.containerr{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+p{
+    font-weight: 500;
+}
+
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#191919;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    margin-top: 50px;
+} 
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .container {
+        padding: 15px;
+        font-size: medium;
+    }
+
+    .containerr {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 70px 0 70px;
+    }
+
+    .results {
+        font-size: medium;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .footer {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .container textarea{
+        border-width: px;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+}
