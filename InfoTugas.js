@@ -1,19 +1,39 @@
-function senin (){
-    alert('INFO TUGAS\nSKI: Presentasi Video\nFiqih: Outfit Role');
+function lihatsenin() {
+    document.getElementById('seninn').style.display = 'flex';
 }
 
-function selasa(){
-    alert('INFO TUGAS\nMAT-W: Ulangan Harian\nEkonomi: Ulangan Harian');
+function tutup1() {
+    document.getElementById('seninn').style.display = 'none';
 }
 
-function rabu(){
-    alert('INFO TUGAS\nSEJIN: Pahlawan tiap provinsi\nQurDis: Cerita/Tafsir/Poster');
+function lihatselasa() {
+    document.getElementById('selasaa').style.display = 'flex';
 }
 
-function kamis(){
-    alert('INFO TUGAS\nMAT-LAN: Kemungkinan Ulangan\nPPKN: Video');
+function tutup2() {
+    document.getElementById('selasaa').style.display = 'none';
 }
 
-function jumat(){
-    alert('INFO TUGAS\nAQD: Presentasi Video')
+function lihatrabu() {
+    document.getElementById('rabuu').style.display = 'flex';
+}
+
+function tutup3() {
+    document.getElementById('rabuu').style.display = 'none';
+}
+
+function lihatkamis() {
+    document.getElementById('kamiss').style.display = 'flex';
+}
+
+function tutup4() {
+    document.getElementById('kamiss').style.display = 'none';
+}
+
+function lihatjumat() {
+    document.getElementById('jumatt').style.display = 'flex';
+}
+
+function tutup5() {
+    document.getElementById('jumatt').style.display = 'none';
 }
