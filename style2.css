@@ -88,8 +88,12 @@ body{
     margin-top: 10px;
     padding: 40px;
     cursor: pointer;
-
 }
+
+.marg1 h4{
+    text-decoration: overline;
+}
+
 .colomatas{
     display: flex;
     align-items: center;
