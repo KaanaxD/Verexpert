@@ -25,7 +25,7 @@
                 <p>Roster Senin-Jumat, Sabtu minggu Libur</p>
             </div>
         <div class="colomatas">
-            <div class="marg1" onclick="senin()">
+            <div class="marg1" onclick="lihatsenin()">
                 <h4>Senin</h4>
                 <ul>
                     <li>Fiqih</li>
@@ -35,7 +35,7 @@
                     <li>-</li>
                 </ul>
             </div>
-            <div class="marg1" onclick="selasa()">
+            <div class="marg1" onclick="lihatselasa()">
                 <h4>Selasa</h4>
                 <ul>
                     <li>Matematika(W)</li>
@@ -45,7 +45,7 @@
                     <li>-</li>
                 </ul>
             </div>
-            <div class="marg1" onclick="rabu()">
+            <div class="marg1" onclick="lihatrabu()">
                 <h4>Rabu</h4>
                 <ul>
                     <li>Inggris</li>
@@ -56,9 +56,9 @@
                     </ul>
             </div>
         </div>
-        <div class="colomatas" onclick="kamis()">
-            <div class="marg1">
-                <h4>Kamis</h4>
+        <div class="colomatas">
+            <div class="marg1" onclick="lihatkamis()">
+                <h4>Kamis</h4>  
                 <ul>
                     <li>Matematika(p)</li>
                     <li>Ekonomi</li>
@@ -67,7 +67,7 @@
                     <li>-</li>
                 </ul>
             </div>
-            <div class="marg1" onclick="jumat()">
+            <div class="marg1" onclick="lihatjumat()">
                 <h4>Jum'at</h4>
                 <ul>
                     <li>PJOK</li>
@@ -86,6 +86,38 @@
                     </div>
                 </div>
             </a>
+        </div>
+
+        <div id="seninn" class="modal-overlay">
+            <div class="modal-content">
+                <p>INFO TUGAS SENIN<br><br>SKI: Presentasi Video <br>Fiqih: Outfit Role</p>
+                <button class="modal-button" onclick="tutup1()">OK</button>
+            </div>
+        </div>
+        
+        <div id="selasaa" class="modal-overlay">
+            <div class="modal-content">
+                <p>INFO TUGAS SELASA<br><br>MAT-W: Ulangan Harian <br>Ekonomi: Ulangan Harian</p>
+                <button class="modal-button" onclick="tutup2()">OK</button>
+            </div>
+        </div>
+        <div id="rabuu" class="modal-overlay">
+            <div class="modal-content">
+                <p>INFO TUGAS RABU <br><br>SEJIN: Pahlawan tiap provins <br>QurDis: Cerita/Tafsir/Poster</p>
+                <button class="modal-button" onclick="tutup3()">OK</button>
+            </div>
+        </div>
+        <div id="kamiss" class="modal-overlay">
+            <div class="modal-content">
+                <p>INFO TUGAS KAMIS <br><br>MAT-LAN: Kemungkinan Ulangan <br>PPKN: Video</p>
+                <button class="modal-button" onclick="tutup4()">OK</button>
+            </div>
+        </div>
+        <div id="jumatt" class="modal-overlay">
+            <div class="modal-content">
+                <p>INFO TUGAS JUMAT <br><br>AQD: Presentasi Video</p>
+                <button class="modal-button" onclick="tutup5()">OK</button>
+            </div>
         </div>
 
         <div class="footer">
