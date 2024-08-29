@@ -138,25 +138,41 @@ input[type="number"] {
     }
 
     nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        justify-content: center; /* Menyesuaikan agar berada di tengah */
+        padding: 1rem; /* Mengurangi padding untuk tampilan mobile */
     }
 
     nav h1 {
-        margin-left: 0;
+        margin: 0;
         text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk tampilan mobile */
+        margin-bottom: 10px;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
+        gap: 1rem; /* Menambahkan jarak antar elemen */
     }
 
     nav ul {
         flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
+        gap: 1rem; /* Jarak antara item menu */
+        padding: 0; /* Menghilangkan padding default */
+        margin: 0;
+        align-items: center; /* Menyelaraskan menu di tengah */
     }
+
+    nav ul li a {
+        font-size: 1rem; /* Menyesuaikan ukuran font untuk tampilan mobile */
+        padding: 10px; /* Menambah padding agar lebih mudah diklik di mobile */
+        border-radius: 10px; /* Menambah radius border */
+    }
+
+    nav ul li a:hover {
+        padding: 12px; /* Meningkatkan padding saat hover untuk tampilan yang lebih baik */
+    }
+}
