@@ -1,0 +1,131 @@
+*, html{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(Vintavis.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    margin: none;
+    padding: 2rem 2rem;
+    background-color: #191919;
+    justify-content:space-between
+}
+
+nav h1{
+    color: aliceblue;
+}
+
+.navbar{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding:8px 0;
+    transition: 0.5s ease-in-out;
+    border: none
+}
+
+nav ul li a:hover{
+    color:#191919;
+    background-color:aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+h4{
+    color: white;
+    text-align:left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+button{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;    
+  }
+
+input[type="number"] {
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .tengah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;    
+  }
+  
+  .message {
+    margin-top: 15px;
+    color: #333;
+  }
+
+  .tulis {
+    text-align: start;
+    margin-left: 10px;
+  }
+  
+
+   .capek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;    
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.capek a{
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+  .capek a:hover{
+    border: solid aliceblue;
+  }

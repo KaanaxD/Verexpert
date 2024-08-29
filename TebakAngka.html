@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TebakAngka</title>
+    <link rel="shortcut icon" href="Vinta.png" type="image/x-icon">
+    <link rel="stylesheet" href="TebakAngka.css">
+</head>
+<body>
+    <nav >
+        <div class="navbar">
+            <h1 style="font-style: italic;">VEREXPERT</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Galeri.html">Galeri</a></li>
+            <li><a href="InfoTugas.html">Roster</a></li>
+        </ul>   
+    </nav> 
+    <br><br><br><br><br>
+    <div style="display: flex; justify-content: center;gap: 20px;">
+        <div class="tengah">
+            <div class="container">
+                <h4>Tebak Angka</h4>
+                <p class="tulis" id="Percobaan"></p>
+                <br>
+                <input type="number" id="guessInput" placeholder="Masukkan angka (1-100)" />
+                <button onclick="checkGuess()" id="pencet">Tebak</button>
+                <p class="message" id="message"></p>
+            </div>
+        </div>
+        <div class="capek">
+            <a href="TebakAngka.html">
+                <div class="hoverr">
+                    <div class="tengah">
+                        <div class="Reset">
+                            <h4>Reset</h4>
+                        </div>
+                    </div>
+                </div>
+            </a> 
+        </div>
+    </div>
+    <script src="TebakAngka.js"></script>
+</body>
+</html>
